@@ -1,0 +1,47 @@
+pip install virtualenv
+
+python -m venv env ---> creates env 
+
+ls env\Scripts ----> lists folders/files in env
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned  ----> updates ExecutionPolicy
+
+.\env\Scripts\Activate    ----> enters into (env) PS E:\ToDoApplication>  ----> virtual environment
+
+--------------------------------------------------------------------------------------------------------------
+
+pip install flask
+
+pip install flask-sqlalchemy
+
+pip install pymysql
+
+pip install cryptography
+
+pip install flask_login
+--------------------------------------------------------------------------------------------------------------
+
+For MySQL
+
+--------------------------------------------------------------------------------------------------------------
+mysql -u root -p
+
+enter mysql password:  
+
+CREATE DATABASE listtodo_db;
+SHOW DATABASES;
+EXIT;
+
+--------------------------------------------------------------------------------------------------------------
+
+For python interpreter ( if not mentioned in if __name__=="__main__")
+
+--------------------------------------------------------------------------------------------------------------
+from app import app, db
+with app.app_context():
+  db.create_all()
+
+--------------------------------------------------------------------------------------------------------------
+
+installed Jinja2 snippet extension
+
