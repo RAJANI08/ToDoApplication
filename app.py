@@ -9,7 +9,7 @@ app = Flask(__name__)   # creates flask application
 # ---------------- CONFIG ----------------
 
 app.config['SECRET_KEY'] = 'secret-key'   # REQUIRED for login
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:rajani@localhost:3306/listtodo_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost:3306/listtodo_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)    # creates db object that connects SQlAlchemy with Falsk application 
